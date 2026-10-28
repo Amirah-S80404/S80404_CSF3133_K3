@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Programming Workshop</title>
+</head>
+
+<body>
+
+<header>
+	<h1>Programming Workshop</h1>
+	<p>Empowering next generation of coders.</p>
+</header>
+
+<nav>
+	<a href = "#about">About the Event</a> | 
+	<a href = "#schedule">Event Schedule</a> | 
+	<a href = "#register">Event Register</a>
+</nav>
+
+<!--section about-->
+<section id = "about">
+	<h2>About the Event</h2>
+	<article>
+		<h3>Dr. Rrah</h3>
+		<p>Key speaker specializing in artificial intelligence and computational theory.</p>
+	</article>
+	<article>
+		<h3>Mr.Alan</h3>
+		<p>Lead workshop instructor focusing on algorithmic problem solving and web developement.</p>
+	</article>
+</section>
+
+<!--section schedule & tables-->
+<section id = "schedule">
+	<h2>Event Schedule</h2>
+	<table border = "1">
+		<tr>
+			<th>Time</th>
+			<th>Activity</th>
+			<th>Venue</th>
+			<th>Person in charge</th>
+		</tr>
+		<tr>
+			<td>9:00AM</td>
+			<td>Opening Ceremony</td>
+			<td>Audi1-01</td>
+			<td>Dr. Rrah</td>
+		</tr>
+		<tr>
+			<td>10:00AM</td>
+			<td>Session 1: HTML Basic</td>
+			<td rowspan = "2">BYOD1</td>
+			<td>Mr. Alan</td>
+		</tr>
+		<tr>
+			<td>11:00AM</td>
+			<td>Session 2: CSS Basic</td>
+			<td>Mr. Alan</td>
+		</tr>
+		<tr>
+			<td>12:00PM</td>
+			<td>Session 3: JavaScript Basic</td>
+			<td>MP1</td>
+			<td>Mr. John</td>
+		</tr>
+		<tr>
+			<td>1:00PM</td>
+			<td colspan = "3">Lunch Break</td>
+		</tr>
+		<tr>
+			<td>2:00PM</td>
+			<td>Coding Question Challenge</td>
+			<td rowspan = "2">Audi1-01</td>
+			<td>Mr. Alan</td>
+		</tr>
+		<tr>
+			<td>3:00PM</td>
+			<td>Closing Ceremony</td>
+			<td>Dr. Rrah</td>
+		</tr>
+	</table>
+</section>
+
+<!--section register-->
+<section id = "register">
+	<h2>Event Registration</h2>
+	<form action = "register.html" method = "post">
+	<div>
+		<label for = "fullname">Full Name: </label>
+		<input type = "text" id = "fullname" name = "fullname" required>
+	</div>
+	<br>
+	<div>
+		<label for = "matric">Matric Number: </label>
+		<input type = "text" id = "matric" name = "matric" required>
+	</div>
+	<br>
+	<div>
+		<label for = "email">E-mail: </label>
+		<input type = "email" id = "email" name = "email" required>
+	</div>
+	
+	<!--radio button to pick year of study-->
+	<fieldset>
+		<legend>Year of Study:</legend>
+		<input type = "radio" id = "year1" name = "year_study" value = "Year 1">
+		<label for = "year1">Year 1</label><br>
+		<input type = "radio" id = "year2" name = "year_study" value = "Year 2">
+		<label for = "year2">Year 2</label><br>
+		<input type = "radio" id = "year3" name = "year_study" value = "Year 3">
+		<label for = "year3">Year 3</label><br>
+		<input type = "radio" id = "year4" name = "year_study" value = "Year 4">
+		<label for = "year4">Year 4</label><br>
+	</fieldset>
+	
+	<!--checkbox to pick which session of the event to join-->
+	<fieldset>
+		<legend>Sessions to Join:</legend>
+		<input type = "checkbox" id = "session1" name = "session" value = "session1">
+		<label for = "session1">Session 1: HTML Basic</label><br>
+		<input type = "checkbox" id = "session2" name = "session" value = "session2">
+		<label for = "session2">Session 2: CSS Basic</label><br>
+		<input type = "checkbox" id = "session3" name = "session" value = "session3">
+		<label for = "session3">Session 3: JavaScript Basic</label><br>
+	</fieldset>
+	<br>
+	
+	<!--pick the programme of the student-->
+	<div>
+		<label for = "programme">Programme: </label>
+		<select id = "programme" name = "programme">
+		<option value = "se">Software Engineering</option>
+		<option value = "mc">Mobile Computing</option>
+		<option value = "im">Informatic Maritime</option>
+		<option value = "ccs">Cloud Computing Security</option>
+		</select>
+	</div>
+	<br>
+	
+	<!--submit button-->
+	<div>
+		<input type = "submit" value = "Submit">
+	</div>
+	</form>
+</section>
+	
+<!--Footer-->
+	<footer>
+		<p>Organizer: Faculty of Computer Science and Mathematics &copy; 2026</p>
+	</footer>
+</body>
