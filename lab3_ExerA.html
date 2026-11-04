@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bakery Online Ordering</title>
+</head>
+
+<body>
+	<div id = "header">
+		<h1>Campus Bakery <span>Freshly Baked!</span></h1>
+	</div>
+	
+	<div id = "nav">
+		<a href = "#content">Order</a> | 
+		<a href = "#sidebar">Price List</a> | 
+		<a href = "#footer">Contact</a>
+	</div>
+	
+	<div id = "content">
+		<h2>Welcome</h2>
+			<p>Welcome to <strong>Campus Bakery</strong>! We bake <em>fresh</em> cupcakes and cakes every morning.
+			<span> Pre-order today</span> and <a href = "#sidebar"> check our price list</a>.</p>
+	
+	<div id = "orderform">
+		<h2>Order Form</h2>
+			<form action = "order.php" method = "post" oninput = "total.value = (cupcake.valueAsNumber * 3 + slices.valueAsNumber * 5).toFixed(2)">
+			
+			<label for="cname">Customer name: </label>
+			<input type="text" id="cname" name="cname" placeholder="Enter your name" required autofocus><br>
+			
+			<label for="phone">Phone: </label>
+			<input type="tel" id="phone" name="phone" placeholder="012-3456789" required><br>
+			
+			<label for="email">E-mail: </label>
+			<input type="email" id="email" name="email" required><br>
+			
+			<label for="pdate">Pick-up Date: </label>
+			<input type="date" id="pdate" name="pdate"><br>
+			
+			<label for="ptime">Pick-up Time: </label>
+			<input type="time" id="ptime" name="ptime"><br>
+			
+			<label for="flavor">Flavour: </label>
+			<input id="flavor" id="flavor" list="flavors"><br>
+			<datalist id="flavors">
+				<option value="chocolate">
+				<option value="Vanilla">
+				<option value="Red velvet">
+				<option value="Strawberry">
+			</datalist>
+			
+			<label for="icing">Icing color: </label>
+			<input type="color" id="icing" name="icing"><br>
+			
+			<label for="sweet">Sweetness(1-5): </label>
+			<input type="range" id="sweet" name="sweet" min="1" max="5" step="1"><br>
+			
+			<label for="cupcakes">Cupcakes(RM3.00 each): </label>
+			<input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br>
+			
+			<label for="slices">Cake Slices(RM5.00 each): </label>
+			<input type="number" id="slices" name="slices" min="0" value="0"><br>
+			
+			Total price: RM <output name="total" for="cupcakes slices">0.00</output><br>
+			
+			<input type="submit" value="Place Order">
+			
+			</form>
+		</div>
+	</div>
+	
+	<div id = "sidebar">
+		<h2>Price List</h2>
+			<ul>
+				<li>CampusBakery&reg; Cupcake: RM3.00</li>
+				<li>Cake Slice: RM5.00(about &pound; 0.85)</li>
+				<li>Orders &gt; 10 pieces get a free drink</li>
+				<li>Orders &lt; 5 pieces: Pick-up only</li>
+			</ul>
+	</div>
+	
+	<div id = "footer">
+		<p>&copy; 2026 CampusBakery&reg;&nbsp;|&nbsp;Prices in RM (&euro; 1 &asymp; RM 5)</p>
+	</div>
+	
+</body>
+</html>	
