@@ -1,0 +1,129 @@
+/* General Page Layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFDF9;
+}
+
+header {
+    background-color: #4A2C2A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6F4E37;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #6F4E37;
+    color: #FFFFFF;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:visited {
+    color: #FFFFFF;
+}
+
+nav ul li a:hover {
+    background-color: #D35400;
+    color: #FFFFFF;
+}
+
+/* Menu, Video, and Feedback Sections */
+#menu, #video, #feedback {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #E5D3B3;
+    background-color: #FFFFFF;
+}
+
+/* Menu Item Card and Old Price Strike-through */
+.item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #7F8C8D;
+    margin-right: 8px;
+}
+
+/* Responsive Video Styling */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 6px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    background-color: #FDF2E9;
+    padding: 20px;
+    border: 1px solid #D35400;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #CCCCCC;
+}
+
+.feedback-form button {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.feedback-form button:hover {
+    background-color: #D35400;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4A2C2A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer a:link,
+footer a:visited {
+    color: #FDEBD0;
+}
