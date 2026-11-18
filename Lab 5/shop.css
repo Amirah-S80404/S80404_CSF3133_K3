@@ -1,0 +1,119 @@
+/* Global styles and typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+
+/* Header section with background image and cover sizing */
+header {
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Heading font styling using Merriweather */
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    margin: 10px 0 0 0;
+}
+
+/* Main content container layout */
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+/* Paragraph spacing and readability */
+p {
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Navigation bar layout */
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Active navigation link styling */
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* Product Table Structure and Borders */
+#product {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+}
+
+#product td, #product th {
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Table Header Styles */
+#product th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Right align price column cells */
+#product td.price {
+    text-align: right;
+}
+
+/* Alternating table rows */
+#product tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table row hover effect */
+#product tr:hover {
+    background-color: #ddd;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    color: #555;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
